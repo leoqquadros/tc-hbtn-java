@@ -3,5 +3,4 @@ public class PrintStringVariable {
         String texto = "Holberton School";
         System.out.printf("%s\n%s\n%.9s\n", texto, texto, texto);
     }
-
 }
