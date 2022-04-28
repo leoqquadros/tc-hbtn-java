@@ -1,7 +1,7 @@
 public class PrintIntegerVariable {
-
     public static void main(String[] args) {
-        System.out.println("");
+        int num = 311;
+        System.out.printf("Avenida Andaló, %d\n",num);
     }
 }
 
