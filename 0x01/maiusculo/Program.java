@@ -1,3 +1,4 @@
+package maiusculo;
 public class Program {
     public static void main(String[] args) {
         boolean caractereEhMaiusculo1 = Caractere.EhMaiusculo('a');
