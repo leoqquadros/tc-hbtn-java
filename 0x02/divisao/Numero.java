@@ -1,3 +1,4 @@
+package divisao;
 public class Numero {
     public static void dividir(int a, int b) {
         int resultado = 0;

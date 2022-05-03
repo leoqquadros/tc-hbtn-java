@@ -1,3 +1,4 @@
+package quadrado;
 public class Quadrado {
     public static double area(double lado) {
         if (lado > 0) {
