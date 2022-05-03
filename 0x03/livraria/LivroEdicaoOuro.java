@@ -1,9 +1,10 @@
+package livraria;
 import exceptions.*;
 public class LivroEdicaoOuro extends Livro {
 
 
     public LivroEdicaoOuro(String titulo, String autor, double preco)
-            throws LivroInvalidoException, AutorInvalidoException {
+            throws exceptions.LivroInvalidoException, exceptions.AutorInvalidoException {
         super(titulo, autor, preco);
         // TODO Auto-generated constructor stub
     }

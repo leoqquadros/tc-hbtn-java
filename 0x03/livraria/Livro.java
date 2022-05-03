@@ -1,10 +1,11 @@
+package livraria;
 import exceptions.*;
 public class Livro {
     private String titulo;
     private String autor;
     private double preco;
 
-    public Livro(String titulo, String autor, double preco) throws LivroInvalidoException, AutorInvalidoException {
+    public Livro(String titulo, String autor, double preco) throws exceptions.LivroInvalidoException, exceptions.AutorInvalidoException {
         setTitulo(titulo);
         setAutor(autor);
         setPreco(preco);
@@ -14,11 +15,11 @@ public class Livro {
         return titulo;
     }
 
-    public void setTitulo(String titulo) throws LivroInvalidoException {
+    public void setTitulo(String titulo) throws exceptions.LivroInvalidoException {
         if (titulo.length() > 3) {
             this.titulo = titulo;
         } else {
-            throw new LivroInvalidoException("Titulo de livro invalido");
+            throw new exceptions.LivroInvalidoException("Titulo de livro invalido");
         }
     }
 
@@ -26,11 +27,11 @@ public class Livro {
         return autor;
     }
 
-    public void setAutor(String autor) throws AutorInvalidoException {
+    public void setAutor(String autor) throws exceptions.AutorInvalidoException {
         if (autor.contains(" ")) {
             this.autor = autor;
         } else {
-            throw new AutorInvalidoException("Nome de autor invalido");
+            throw new exceptions.AutorInvalidoException("Nome de autor invalido");
         }
     }
 
@@ -38,11 +39,11 @@ public class Livro {
         return preco;
     }
 
-    public void setPreco(double preco) throws LivroInvalidoException {
+    public void setPreco(double preco) throws exceptions.LivroInvalidoException {
         if (preco > 0) {
             this.preco = preco;
         } else {
-            throw new LivroInvalidoException("Preco de livro invalido");
+            throw new exceptions.LivroInvalidoException("Preco de livro invalido");
         }
 
     }
