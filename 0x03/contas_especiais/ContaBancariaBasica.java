@@ -20,7 +20,7 @@ public class ContaBancariaBasica {
         }
     }
 
-    public void sacar(double valor) throws exceptions.OperacaoInvalidaException1 {
+    public void sacar(double valor) throws OperacaoInvalidaException1 {
         if (valor == 0 ) {
             throw new OperacaoInvalidaException("Valor de saque deve ser maior que 0");
         }else if (saldo >= valor) {
