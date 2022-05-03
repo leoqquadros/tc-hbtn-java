@@ -1,6 +1,6 @@
 public class Empregado {
-    double salarioFixo;
-    double bonus;
+    private double salarioFixo;
+    private double bonus;
 
     public Empregado(double salarioFixo) {
         super();
