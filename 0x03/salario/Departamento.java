@@ -1,3 +1,4 @@
+package salario;
 public class Departamento {
     private double valorMeta;
     private double valorAtingidoMeta;
