@@ -1,4 +1,3 @@
-package salario;
 public class Empregado {
     private double salarioFixo;
     private double bonus;
