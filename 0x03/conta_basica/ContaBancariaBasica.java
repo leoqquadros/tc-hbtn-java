@@ -1,3 +1,4 @@
+import exceptions.*;
 public class ContaBancariaBasica {private String numeracao;
     private double saldo;
     private double taxaJurosAnual;
