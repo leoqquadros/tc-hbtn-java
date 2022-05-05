@@ -1,4 +1,4 @@
-package resumo_pedido.produtos;
+package produtos;
 
 public abstract class Produto {
 

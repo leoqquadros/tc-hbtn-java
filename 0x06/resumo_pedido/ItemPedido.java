@@ -1,5 +1,3 @@
-package resumo_pedido;
-
 import produtos.Produto;
 
 public class ItemPedido {
