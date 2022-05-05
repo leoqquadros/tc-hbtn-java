@@ -1,9 +1,7 @@
 import java.util.Locale;
-import pedido_livraria.produtos.Produto;
 public class Program {
     public static void main(String[] args) {
         Locale.setDefault(new Locale("pt", "BR"));
-
         produtos.Livro livro1 = new produtos.Livro("Duna", 2017, "Brasil", 56.30, 680, "Frank Herbert", 1);
         produtos.Livro livro2 = new produtos.Livro("Um de nós está mentindo", 2018, "Brasil", 34.93, 384,
                 "Karen Mcmanus", 1);
@@ -28,7 +26,6 @@ public class Program {
 
         System.out.printf("Total Pedido: %.2f\n", pedido1.calcularTotal());
 
-
         // Pedido 2
         ItemPedido[] itensPedido2 = new ItemPedido[] {
                 new ItemPedido(livro1, 1),
@@ -38,7 +35,6 @@ public class Program {
         Pedido pedido2 = new Pedido(10, itensPedido2);
 
         System.out.printf("Total Pedido: %.2f\n", pedido2.calcularTotal());
-
 
         // Pedido 3
         ItemPedido[] itensPedido3 = new ItemPedido[] {
@@ -63,6 +59,7 @@ public class Program {
         Pedido pedido4 = new Pedido(5, itensPedido4);
 
         System.out.printf("Total Pedido: %.2f\n", pedido4.calcularTotal());
-
     }
+
+
 }
