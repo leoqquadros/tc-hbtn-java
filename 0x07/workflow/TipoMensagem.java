@@ -1,4 +1,4 @@
 
-public class TipoMensagem {
+public enum TipoMensagem {
     AVISO, ERRO, LOG;
 }
