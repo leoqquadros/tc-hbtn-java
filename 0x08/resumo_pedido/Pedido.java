@@ -1,3 +1,4 @@
+import provedores.*;
 public class Pedido {
 
     private int codigo;
