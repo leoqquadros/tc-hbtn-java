@@ -1,4 +1,5 @@
-package resumo_pedido.provedores;
+package provedores;
 
-public class TipoProvedorFrete {
+public enum TipoProvedorFrete {
+    SEDEX, JADLOG, LOGGI;
 }
