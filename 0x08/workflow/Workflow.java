@@ -1,4 +1,3 @@
-package workflow;
 
 public class Workflow {
     public Workflow() {

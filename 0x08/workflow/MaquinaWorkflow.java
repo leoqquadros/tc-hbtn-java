@@ -1,4 +1,3 @@
-package workflow;
 
 public class MaquinaWorkflow {
     public MaquinaWorkflow() {
