@@ -1,9 +1,5 @@
-import Comida;
-import Feliz;
-import Humor;
-import Irritado;
-import MuitoFeliz;
-import Triste;
+import comida.*;
+import humor.*;
 public class Personagem {
     public  int pontosDeFelicidade;
     private int total;
