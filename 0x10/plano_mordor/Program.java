@@ -1,5 +1,7 @@
+package plano_mordor;
+
 import comida.*;
-import humor.*;
+import plano_mordor.comida.*;
 
 
 public class Program {
