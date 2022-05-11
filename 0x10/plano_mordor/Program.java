@@ -1,5 +1,5 @@
-import humor.*;
-import comida.*;
+import plano_mordor.humor.*;
+import plano_mordor.comida.*;
 
 public class Program {
     public static void main(String[] args) {

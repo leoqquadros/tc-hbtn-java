@@ -1,5 +1,6 @@
-import comida.*;
 import humor.*;
+import comida.*;
+
 public class Personagem {
     public  int pontosDeFelicidade;
     private int total;
@@ -9,20 +10,21 @@ public class Personagem {
     public String obterHumorAtual(int total){
         if(total < -5){
             humor = new Irritado();
-            tipoHumor = humor.getClass().getName();
+            tipoHumor = humor.getClass().getSimpleName();
         }
         if (total >= -5 && total <=0){
             humor = new Triste();
-            tipoHumor = humor.getClass().getName();
+            tipoHumor = humor.getClass().getSimpleName();
         }
         if(total >= 1 && total <= 15){
             humor = new Feliz();
-            tipoHumor = humor.getClass().getName();
+            tipoHumor = humor.getClass().getSimpleName();
         }
-        if (total > 15){
+        if (total > 15) {
             humor = new MuitoFeliz();
+            tipoHumor = humor.getClass().getSimpleName();
         }
-        return humor.replace("humor.", "");
+        return tipoHumor;
     }
     public void comer(Comida[] comidas) {
         for (Comida comida : comidas) {
