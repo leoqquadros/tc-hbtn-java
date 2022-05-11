@@ -1,11 +1,9 @@
-package plano_mordor;
-
-import plano_mordor.comida.Comida;
-import plano_mordor.humor.Feliz;
-import plano_mordor.humor.Humor;
-import plano_mordor.humor.Irritado;
-import plano_mordor.humor.MuitoFeliz;
-import plano_mordor.humor.Triste;
+import Comida;
+import Feliz;
+import Humor;
+import Irritado;
+import MuitoFeliz;
+import Triste;
 public class Personagem {
     public  int pontosDeFelicidade;
     private int total;
