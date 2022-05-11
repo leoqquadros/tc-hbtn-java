@@ -1,6 +1,5 @@
 import humor.*;
 import comida.*;
-
 public class Personagem {
     public  int pontosDeFelicidade;
     private int total;
