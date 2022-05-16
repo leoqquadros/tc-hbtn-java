@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +13,7 @@ public class Celular {
     public Celular(ArrayList<Contato> contatos){
         this.contatos = contatos;
     }
-    public int buscarPosicaoContato(String nomeContato){
+    public int obterPosicaoContato(String nomeContato){
         return contatos.indexOf(nomeContato);
     }
 
@@ -50,8 +49,6 @@ public class Celular {
                 throw new IllegalArgumentException("Nao foi possivel modificar contato. Contato nao existe");
             }
         }
-
-
 
         for (int i = 0; i < contatos.size(); i++) {
 
