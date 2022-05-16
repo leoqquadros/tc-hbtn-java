@@ -20,7 +20,7 @@ public class Celular {
     public void adicionarContato(Contato contato) {
         for (Contato contatoAdd : contatos) {
             if (contatoAdd.getNome().equals(contato.getNome())) {
-                throw new IllegalArgumentException("Não foi possivel adicionar contato. Contato jah existente com esse nome");
+                throw new IllegalArgumentException("Nao foi possivel adicionar contato. Contato jah existente com esse nome");
             }
         }
         contatos.add(contato);
@@ -33,7 +33,7 @@ public class Celular {
             if (contatos.get(i).getNome().equals(contato.getNome())){
                 contatos.remove(i);
             } else {
-                throw new IllegalArgumentException("Não foi possivel remover contato. Contato nao existe");
+                throw new IllegalArgumentException("Nao foi possivel remover contato. Contato nao existe");
             }
         }
     }
@@ -43,10 +43,10 @@ public class Celular {
 
         for (Contato contato : contatos) {
             if (contato.getNome().equals(novoContato.getNome()) && ! contato.getNome().equals(contatoAntigo.getNome())){
-                throw new IllegalArgumentException("Nao foi possivel modificar contato. Contato jah existente com esse nome");
+                throw new IllegalArgumentException("Nao foi possivel modificar contato. Contato nao existe");
             }
             if (!(contatoAntigo.getNome().equals(novoContato.getNome()))) {
-                throw new IllegalArgumentException("Nao foi possivel modificar contato. Contato nao existe");
+                throw new IllegalArgumentException("Nao foi possivel modificar contato. Contato jah existente com esse nome");
             }
         }
 
