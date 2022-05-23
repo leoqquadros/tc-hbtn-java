@@ -1,4 +1,3 @@
-package armazem_especifico;
 
 public interface Armazenavel <T> {
     public void adicionarAoInventario(String nome,T valor);
