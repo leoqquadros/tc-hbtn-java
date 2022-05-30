@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 public class Program {
     public static void main(String[] args) {
-        Locale.setDefault(new Locale("PT","BR"));
+        Locale.setDefault(new Locale("PT", "BR"));
         Pessoa pessoa1 = new Pessoa(1, "John Bannins", "Desenvolvedor", 23, 3200);
         Pessoa pessoa2 = new Pessoa(2, "Derry Collier", "Desenvolvedor", 45, 8600);
         Pessoa pessoa3 = new Pessoa(3, "Mikey Berg", "Product Owner", 51, 11350);
@@ -22,11 +22,11 @@ public class Program {
         List<Pessoa> todasPessoas = List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa5,
                 pessoa6, pessoa7, pessoa8, pessoa9, pessoa10);
 
-        TreeMap<String, TreeSet<Pessoa>> pessoas1 = ConsultaPessoas.obterPessoasAgrupadasPorCargoEmOrdemReversa(todasPessoas);
-        TreeMap<String, TreeSet<Pessoa>> pessoas2 = ConsultaPessoas.obterPessoasAgrupadasPorCargoEmOrdemReversa(
+        Map<String, Long> pessoas1 = ConsultaPessoas.obterContagemPessoasPorCargo(todasPessoas);
+        Map<String, Long> pessoas2 = ConsultaPessoas.obterContagemPessoasPorCargo(
                 List.of(pessoa1, pessoa2, pessoa3, pessoa4, pessoa9, pessoa10)
         );
-        TreeMap<String, TreeSet<Pessoa>> pessoas3 = ConsultaPessoas.obterPessoasAgrupadasPorCargoEmOrdemReversa(
+        Map<String, Long> pessoas3 = ConsultaPessoas.obterContagemPessoasPorCargo(
                 List.of(pessoa1, pessoa3, pessoa4, pessoa5, pessoa9)
         );
 
