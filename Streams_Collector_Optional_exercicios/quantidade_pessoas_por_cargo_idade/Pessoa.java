@@ -1,4 +1,4 @@
-package quantidade_pessoas_por_cargo_idade;
+
 
 public class Pessoa implements Comparable<Pessoa> {
     private int codigo;
